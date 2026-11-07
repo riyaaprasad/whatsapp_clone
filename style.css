@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+.container{
+    display:flex;
+}
+/* sidebar */
+.sidebar{
+    background-color:#202C33;
+    height: 100vh;
+    width:50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.top-section i{
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   color: #aebac1;
+   /* border-radius: 50%; */
+   /* gap: 22px; */
+   padding: 15px ;
+}
+/* .top-section .i{
+    padding: 10px;
+} */
+.top-section i:hover {
+    /* background-color: #d9d9d9; */
+    background-color: #3b4a54;
+    border-radius: 50%;
+    /* column-height: 50%; */
+    /* cursor: pointer;*/
+    /* padding: 0px;   */
+} 
+.sidebar-divider{
+    display: block;
+    width: 23px;
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #3b4a54;
+}
+.bottom-section{
+    display: flex;
+    color: #aebac1;
+    flex-direction: column;
+    margin-top: auto;
+    gap: 20px;
+}
+/* navbar */
+.chatlist-section{
+    background-color:rgb(22, 21, 21);
+    width: 50%;
+    margin-left:50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.first-section{
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    padding: 10px 5px;
+    flex-shrink: 0;
+}
+.first-section h3{
+    margin: 0;
+    flex: 1;
+}
+
+.second-section{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 36px;
+    margin: 10px 12px;
+    padding: 0 12px;
+    background-color: #202c33;
+    border-radius: 20px;
+    color: #aebac1;
+    flex-shrink: 0;
+}
+.second-section input{
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font: inherit;
+}
+.second-section input::placeholder{
+    color: #aebac1;
+}
+
+.third-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px;
+    color: #aebac1;
+    flex-shrink: 0;
+}
+.third-section span{
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+.chat-list{
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+.chat-bubble{
+    display: flex;
+    padding: 9px 12px;
+}
+
+.chat-bubble i{
+    font-size:40px;
+    box-sizing: border-box;
+}
+
+#chat-name{
+    padding:2px 12px;
+}
+
+#time{
+    font-size:10px;
+    margin-left: auto;
+}
